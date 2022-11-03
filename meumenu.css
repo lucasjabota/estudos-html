@@ -1,0 +1,74 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    background-color: #333333;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+
+body {
+    background-image: url(degrade_vermelho.jpg);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+
+.ativa {
+    background-color: gray;
+}
+
+@media screen and (max-width: 600px) {
+    li {
+        float: none;
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.conteudo-drop {
+    display: none;
+    position: absolute;
+    background-color:aquamarine;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .conteudo-drop {
+    display: block;
+}
+
+.div-flex {
+    display: flex;
+    height: 500px;
+    background-color:antiquewhite;
+    flex-direction: row; /*define exibição coluna ou em linha*/
+    flex-wrap: wrap; /*adaptação*/
+    justify-content: center; /*alinhamento horizontal*/
+    align-items: center; /*alinhamento vertical dos itens*/
+    align-content: stretch; /*alinhamento em relação ao pai*/
+}
+
+.div-flex > div {
+    background-color:violet;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}

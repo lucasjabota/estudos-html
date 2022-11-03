@@ -1,0 +1,47 @@
+p:first-child {
+    color:blue;
+}
+
+p i:first-child {
+    color: pink;
+}
+
+p:first-child i {
+    font-size: 50px;
+}
+
+q:lang(no) {
+    quotes: "~" "~";
+}
+
+p::first-line {
+    color:teal;
+    font-variant: small-caps;
+}
+
+p::first-letter {
+    font-size: xx-large;
+}
+h1::before {
+    content: url(desenho2.png);
+}
+
+h1::after {
+    content: url(desenho7.png);
+}
+::marker {
+    color: red;
+}
+
+::selection {
+    color: red;
+    background-color: yellow;
+}
+
+a[target="_blank"] {
+    background-color:burlywood;
+}
+
+[title*=d] {
+    border: 5px solid red;
+}

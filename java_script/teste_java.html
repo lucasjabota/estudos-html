@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="teste_java.js"></script> -->
+    <!--<script src="funcoes.js"></script>-->
+</head>
+
+<body>
+
+    <p id="demo"></p>
+    <div id="div"></div>
+    <h1>wrthgwrh</h1>
+    <h1></h1>
+    <span class="muda"></span>
+    <br>
+    <a id="link" href="">Clique aqui</a>
+    <p onclick="this.innerHTML = 'opa'">Clique</p>
+
+    <button onclick="mostrahora()">Que horas são?</button>
+
+    Nome: <input type="text" id="nome" name="nome" onchange="maiusculas()">
+
+    <hr>
+
+    <div style="background-color: red; width: 120px; height: 20px; 
+    padding: 40px;" onmouseover="mouseEmCima(this)" onmouseout="mouseFora(this)">
+        PASSE O MOUSE AQUI
+    </div>
+
+    <hr>
+
+    <div style="background-color: red; width: 120px; height: 20px; 
+    padding: 40px;" onmousedown="clica(this)" onmouseup="soltou(this)" onclick="aparece()">
+        PASSE O MOUSE AQUI
+    </div>
+    <span id="apareceu"></span>
+
+    <script>
+
+        function clica(objeto){
+            objeto.style.backgroundColor = "yellow"
+            objeto.innerHTML = "ME SOLTE!!!"
+        }
+
+        function soltou(objeto){
+            objeto.style.backgroundColor = "blue"
+            objeto.innerHTML = "OBRIGADO"
+        }
+
+        function aparece(){
+            document.getElementById("apareceu").innerHTML = "APARECE"
+        }
+
+        function mouseEmCima(objeto){
+            objeto.innerHTML = "Mouse está em cima"
+            objeto.style.backgroundColor = "blue"
+        }
+
+        function mouseFora(objeto){
+            objeto.innerHTML = "PASSE O MOUSE AQUI"
+            objeto.style.backgroundColor = "red"
+        }
+
+        function mostrahora() {
+            document.getElementById("demo").innerHTML = Date()
+        }
+
+        function maiusculas() {
+            var nome = document.getElementById("nome")
+            nome.value = nome.value.toUpperCase()
+        }
+
+        document.getElementById("demo").innerHTML = "Olá Mundo"
+        document.getElementById("demo").style.color = "red"
+
+        document.getElementById("demo").onclick = function () {
+            document.getElementById("demo").innerHTML = "fui clicado"
+        }
+
+        var paragrafo = document.createElement("p")
+        paragrafo.innerText = "paragrafo inserido"
+        document.getElementById("div").appendChild(paragrafo)
+
+        document.getElementsByTagName("h1")[1].innerHTML = "segundo"
+        document.getElementsByClassName("muda")[0].innerHTML = "Classe"
+
+        document.getElementById("link").setAttribute("href", "https://www.w3schools.com/")
+    </script>
+
+
+
+
+
+</body>
+
+</html>

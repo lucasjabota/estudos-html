@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .relativa {
+            position: relative;
+            left: 10%;
+            border: 1px solid red;
+            width: 400px;
+            height: 200px;
+        }
+
+        .fixada {
+            position: fixed;
+            border: 1px solid red;
+            bottom: 0;
+            right: 0;
+        }
+
+        .absoluta {
+            position: absolute;
+            border: 1px solid green;
+            top: 50%;
+            right: 0;
+        }
+
+        .grudento {
+            position: sticky;
+            border: 1px solid purple;
+            top: 0;
+        }
+
+        #floatright {
+            float: right;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .div1 {
+            float: left;
+            border: 1px solid red;
+        }
+
+        .div2 {
+            border: 1px solid green;
+        }
+
+        .div3 {
+            float: right;
+            border: 1px solid red;
+        }
+
+        .div4 {
+            clear: both;
+            border: 1px solid green;
+        }
+
+        .sembox {
+            border: 5px solid red;
+            width: 200px;
+        }
+
+        .combox {
+            border: 5px solid red;
+            width: 200px;
+            box-sizing: border-box;
+            /* box-sizing: content-box*/
+        }
+
+        .imgcontainer {
+            float: left;
+            width: 33.33%;
+            padding: 2px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .cont_flex {
+            display: flex;
+            flex-wrap: nowrap;
+            background-color:aquamarine;
+        }
+
+        .cont_flex .box {
+            background-color: beige;
+            width: 50%;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        #img-centralizada {
+            display: block;
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.5;
+        }
+
+        #img-centralizada:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="relativa">
+        ucuhcluhlcaucaocuoippcocoeoipccopcoiheioiovhgcvhcigv
+        <div class="absoluta">
+            fdlçjhdfçlkjndkblnjdfaljkbaf
+        </div>
+    </div>
+
+    <div class="fixada">
+        eçfihsdaçgijsaçgoisajugçiajgç~rfiojga~çfgjh
+    </div>
+
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p class="grudento">fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <p>fçgljhdfgjkdfgkdajkg</p>
+    <hr>
+
+    <p class="clearfix" style=" border: 1px solid black;">
+        <img id="floatright" src="desenho6.png" alt="desenho6" style="width: 170px; height: 200px;">
+        dkljsvfasfdjkvajklvngçsaljknsl~jkgfdsag<br>
+        sdkjfhsdhsafdjrfsçkrfnçkjgslfdlhçijfdkhlj<br>
+        sagljhdfsagçlkijhgçlksihjgçajknçkghçakakgjfagk<br>
+        fagçalsfijhglkfjghbãjkãkbj~fjha~rpojhgare~hog<br>
+        afçikhgfdsairdf~giorjew~gpoirajg~powh<br>
+        reagçporhgoeh~puoj~peqihporijwh~pejhpeojãeoj<br>
+        arsglikjrhierajhg~iejwh~gpojrwhg]pqe~jhgqoegqor
+    </p>
+    <hr>
+    <div class="div1">div sem clear</div>
+    <div class="div2">çoiuhfwsrçogiqwoegijhdfagç~iaopjreg~çaiosjgãiorsghçãprouhja~r</div>
+    <br><br>
+    <div class="div3">div com clear</div>
+    <div class="div4">reçolijhgarçogvihasrçogiahwrbihbioçwbgçraeijhgbçareoihgçaeoih</div>
+    <hr>
+    <div class="sembox">fgjghjghjkg</div>
+    <div class="combox">dhgsfgjfgj</div>
+    <hr>
+    <div class="clearfix">
+        <div class="imgcontainer">
+            <img src="desenho2.png" width="100%">
+        </div>
+        <div class="imgcontainer">
+            <img src="desenho2.png" width="100%">
+        </div>
+        <div class="imgcontainer">
+            <img src="desenho2.png" width="100%">
+        </div>
+    </div>
+    <hr>
+    <div class="cont_flex">
+        <div class="box">
+            dçavhwsçdkivhçwsrlikjhgbçwsroibghjçdsfçlkhjbgn
+            dçshlirjga~rehilkafed~lhçjaefd~hçjkafdehlçajkfdhçl
+            lsgdbknjfda~kdf~bhfd~pojrf~phoçjdh~pf
+            çolbjkaf~çjkdsç~b/sokgbçfsa/gopçsojgbkhs
+        </div>
+        <div class="box">
+            fdkjashdgçkfjghçjkf
+        </div>
+    </div>
+    <hr>
+    <img id="img-centralizada" src="desenho7.png">
+</body>
+
+</html>

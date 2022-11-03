@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #div1,
+        #div2 {
+            background-color: orange;
+            padding: 50px;
+        }
+
+        #p1,
+        #p2 {
+            background-color: white;
+            font-size: 20px;
+            border: 1px solid black;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="div1">
+        <h2>Bubbling</h2>
+        <p id="p1">Clique em mim</p>
+    </div>
+    <hr>
+    <div id="div2">
+        <h2>capture</h2>
+        <p id="p2">Clique em mim</p>
+    </div>
+    <hr>
+    <hr>
+    <button id="botao">Clique</button>
+    <p id="exibe"></p>
+    <p id="demo"></p>
+    <hr>
+    <hr>
+    <form action="" name="formulario" onsubmit="validaNome()">
+        Nome: <input type="text" name="nome" id="nome">
+        <input type="submit" value="enviar">
+    </form>
+
+
+    <script>
+
+        function validaNome() {
+            var x = document.forms["formulario"]["nome"].value
+            if (x == "") {
+                alert("Você deve preencher o nome")
+            }
+        }
+
+
+
+
+
+
+        window.addEventListener("resize", function () {
+            document.getElementById("demo").innerHTML = Math.random()
+        }, false)
+
+
+
+
+
+        var x = document.getElementById("botao")
+        x.addEventListener("mouseover", funcao1);
+        x.addEventListener("click", funcao2);
+        x.addEventListener("mouseout", funcao3);
+
+        function funcao1() {
+            document.getElementById("exibe").innerHTML += "mouse em cima<br>"
+        }
+
+        function funcao2() {
+            document.getElementById("exibe").innerHTML += "clicou<br>"
+        }
+
+        function funcao3() {
+            document.getElementById("exibe").innerHTML += "tirou o mouse<br>"
+        }
+
+        x.removeEventListener("click", funcao2)
+
+
+
+
+
+        document.getElementById("p1").addEventListener("click", function () {
+            alert("Você clicou no elemento branco")
+        }, false)
+
+        document.getElementById("div1").addEventListener("click", function () {
+            alert("Você clicou no elemento laranja")
+        }, false)
+
+        // acima usam bubbling
+        // abaixo usam capture
+
+        document.getElementById("p2").addEventListener("click", function () {
+            alert("Você clicou no elemento branco")
+        }, true)
+
+        document.getElementById("div2").addEventListener("click", function () {
+            alert("Você clicou no elemento laranja")
+        }, true)
+
+    </script>
+</body>
+
+</html>

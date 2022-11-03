@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="meumenu.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <ul>
+        <li><a href="menuteste.html">Inicio</a></li>
+        <li><a href="#noticicas">Noticias</a></li>
+        <li><a href="formularios.html" class="ativa">Cadastro</a></li>
+        <li><a href="#Sobre">Sobre</a></li>
+    </ul>
+    <form action="#" autocomplete="on" method="get">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <span class="material-symbols-outlined">person</span>
+            <label for="nome">nome: </label>
+            <br>
+            <input type="text" id="nome" name="nome" value="" placeholder="nome" required>
+            <br>
+            <span class="material-symbols-outlined">key</span>
+            <label for="senha">Senha: </label>
+            <br>
+            <input type="password" id="senha" name="senha" placeholder="senha" autofocus>
+        </fieldset>
+        <br>
+        <label for="pin">Pin: </label>
+        <br>
+        <input type="text" id="pin" name="pin" size="4" maxlength="4">
+        <br>
+        <input type="radio" id="html" name="linguagem" value="THML">
+        <label for="html">HTML</label>
+        <input type="radio" id="css" name="linguagem" value="CSS">
+        <label for="css">CSS</label>
+        <input type="radio" id="javascript" name="linguagem" value="JS">
+        <label for="javascript">JS</label>
+        <br>
+        <input type="checkbox" id="veiculo1" name="veiculo1" value="bicicleta">
+        <label for="veiculo1">Bicicleta</label><br>
+        <input type="checkbox" id="veiculo2" name="veiculo2" value="carro">
+        <label for="veiculo2">Carro</label><br>
+        <input type="checkbox" id="veiculo3" name="veiculo3" value="moto">
+        <label for="veiculo3">moto</label>
+        <br>
+        <label for="carros">Escolha um carro:</label>
+        <select id="carros" name="carros" size="4" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+            <option value="ferrari" selected>Ferrari</option>
+        </select>
+        <br>
+        <p>escreva aqui</p>
+        <br>
+        <textarea name="mensagem" rows="10" cols="30"></textarea>
+        <br>
+        <button type="button" onclick="alert('hello world!')">clique</button>
+        <br>
+        <input list="navegadores">
+        <datalist id="navegadores">
+            <option value="Edge"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+        </datalist>
+        <br>
+        <input type="color" id="cor" name="cor" value="#456576">
+        <br>
+        <input type="date" id="aniversario" name="aniversario" min="2010-02-10">
+        <br>
+        <input type="email" id="email" name="email">
+        <br>
+        <input type="file" id="meu_arquivo" name="meu_arquivo" multiple>
+        <br>
+        <input type="hidden" id="id_produto" name="id_produto" value="300">
+        <br>
+        <input type="number" id="quantidade" name="quantidade" min="1" max="10" step="3">
+        <br>
+        <input type="range" id="volume" name="volume" min="0" max="75">
+        <br>
+        <input type="search" id="busca" name="busca">
+        <br><br><br><br>
+        <input type="text" id="cod_pais" name="cod_pais" pattern="[A-Za_z]{3}" title="Isso é um código de pais de 3 letras">
+        <br>
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(xx) 9 xxxx-xxxx" pattern="\([0-9]{2}\) 9 [0-9]{4}-[0-9]{4}">
+        <br>
+        <input type="submit" value="enviar">
+        <input type="reset" value="redefinir">
+    </form>
+</body>
+</html>
